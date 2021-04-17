@@ -1,17 +1,21 @@
 *,*::before,*::after { box-sizing: border-box;}
 
-h1 {
-    color:#7e11d4;
+h1 {color:#7e11d4;
     text-align: center;
     margin: auto;
-    width: 50%;
-}
+    width: 50%;}
+
+h2 {text-align: center;
+    margin: auto;
+    width: 50%;}
 
 h3{text-align: center;
     margin: auto;
-    width: 50%;
-}
+    width: 50%;}
+
+blockquote{text-align: center;
+    margin: auto;
+    width: 50%;}
 
 p{margin:auto;
     width: 50%;}
-}    
