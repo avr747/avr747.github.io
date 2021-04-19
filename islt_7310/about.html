@@ -1,3 +1,5 @@
+<!--About Page updated 4/18/2021 with working link to Home and Reflection page, and Navigation bar displays on it-->
+
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -7,15 +9,32 @@
                <link rel="stylesheet" href="nav.css">
 </head>
 <body>
-    <header>
-        <h1> About Me</h1>
-        </header>
+    <div class="wrapper">
+        <div class="sidebar">
+            <!--space for small profile pic goes here-->
+                <ul class="nav">
+                   <li><a href="https://avr747.github.io/islt_7310/index.html">Home</a></li>
+                   <li><a href="https://avr747.github.io/islt_7310/about.html">About</a></li>
+                   <li><a href="https://avr747.github.io/islt_7310/project.html">Projects</a>
+                        <div class="sub-nav">
+                            <ul class="sub-menu">
+                                <li><a href="#">Link 1</a></li>
+                                <li><a href="#">Link 2</a></li>
+                                <li><a href="#">Link 3</a></li>
+                                <li><a href="#">Link 4</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                   <li><a href="https://avr747.github.io/islt_7310/index.html#reflection.html">Reflection</a></li>
+                   <li><a href="https://avr747.github.io/islt_7310/index.html#contact.html">Contact Me</a></li> 
+                </ul>
+        </div>
+    </div>
     
-        <main>
+    <div class="header"><h1> About Me</h1></div>
+        <div class="main">
            <h2>Ashney Randle</h2>
            <h3>Archives Technician</h3>
-            <nav>
-            </nav>
             <p> I am a committed, diligent, and reliable individual who strives to find ways to improve her workplace for the sake of staff 
                 and customers. Currently, I am working as an Archives Technician for the National Archives at St. Louis. 
                 In 2013, In 2013, I graduated from Missouri State University with a Bachelor of Arts in History with a minor in Library Science. 
@@ -29,8 +48,8 @@
                 Masters Library and Information Science (MLIS), 
                 Intended graduation date - 5/2021</p>
             <blockquote><em>"The only <strong>true</strong> wisdom is in knowing you know nothing."</em> -Socrates</blockquote> 
-            <a href="resume.pdf"></a>Resume (PDF)</a>
-        </main>
+            <a href="resume.pdf">Resume (PDF)</a>
+        </div>
     
         <footer>
             <p>&copy; Copyright 2021 Ashney Randle at avr747@mail.missouri.edu. </p>
