@@ -47,3 +47,34 @@ p:first-letter{font-size: 150%;}
         flex: 1 1 0;
     }
 }
+  
+  /* [ON SMALL SCREENS] */
+  @media screen and (max-width: 768px){
+    /* Show Hamburger Icon */
+    #hamnav label { 
+      display: inline-block; 
+      color: white;
+      background: #ff7c00;
+      font-size: 1.2em;
+      padding: 10px;
+    }
+  
+    /* Break down menu items into vertical */
+    #hamitems a {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-top: 1px solid #333;
+    }
+  
+    /* Toggle Show/Hide Menu */
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems { display: block; }
+  }
+  
+  /* [DOES NOT MATTER] */
+  html, body {
+    padding: 0;
+    margin: 0;
+    font-family: arial, sans-serif;
+  }
