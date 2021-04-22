@@ -40,8 +40,7 @@ body{
     color: #fff
 }
 
-/*Hamburger Menu*/
-
+/*Hamburger Menu for Mobile*/
 .nav-toggle:checked ~ nav{
     display: block; 
     }
@@ -63,14 +62,15 @@ body{
     width: 4rem; 
     height: 100%; 
     }
-
-@media screen and (min-width: 640px) {
+    
+    @media screen and (min-width: 640px) {
     .nav-toggle-label{
-        display: none;
-    } 
-}
-/*End Wrapper Burger*/
+        display: none;}
+    }
+/*Hamburger Menu for Mobile*/
 
+
+/*Sub Menu Navigation Starts Here*/
 .nav > li > .sub-nav{
     list-style-type: none;
     top: 0;
@@ -123,6 +123,7 @@ body{
 .nav .sub-menu ul li a:hover{
     color: #fff;
 }
+/*Sub-Menu Navigation Ends Here*/
 
 .wrapper.header{
     padding: 20px;
