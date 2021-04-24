@@ -1,5 +1,9 @@
 *,*::before,*::after { box-sizing: border-box;}
 
+body{
+    background: #00AACC;
+}
+
 h1 {color:#7e11d4;
     text-align: center;
     margin: auto;
@@ -29,7 +33,7 @@ p:first-letter{font-size: 150%;}
             margin-top: 0}
 
 /*Footer*/
-footer {
+.footer {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -38,3 +42,31 @@ footer {
     color: white;
     text-align: center;}
 /*End Footer*/
+
+/*Grid Layout Start*/
+
+.wrapper{ 
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 120px 120px 120px;
+    grid-template-areas:
+    "sidebar header header"
+    "sidebar content content"
+    "footer  footer  footer";
+}
+
+.header{
+    grid-area: header;
+}
+
+.sidebar{
+    grid-area: sidebar;
+}
+
+.main{
+    grid-area: main;
+}
+
+.footer{
+    grid-area: footer;
+}

@@ -7,10 +7,6 @@
     font-family: 'Arial', serif;
 }
 
-body{
-    background: #00AACC; 
-}
-
 .wrapper{
     display: flex;
     position: relative;
