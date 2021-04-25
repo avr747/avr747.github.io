@@ -8,15 +8,16 @@ body{
     grid-template-columns: 150px 1fr;
     grid-template-rows: 50px 700px 130px;
     grid-template-areas:
-    "sidebar header"
-    "sidebar   main"
-    "footer  footer";
+    "sidebar     header"
+    "sidebar       main"
+    "footer      footer";
 }
-
+       
 .header{
     grid-column: 2 / 3;
     grid-row: 1;
 }
+
 .sidebar{
     grid-column: 1;
     grid-row: 1 / 4;
@@ -71,9 +72,7 @@ p:first-letter{font-size: 150%;}
     p + p {text-indent: 1.5em;
             margin-top: 0}
 
-ul{
-    text-align: center;
-}
+
 /*Footer*/
 .footer {
     position: fixed;
