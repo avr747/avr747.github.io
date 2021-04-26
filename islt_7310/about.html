@@ -1,17 +1,17 @@
-<!--About Page updated 4/18/2021 with working link to Home and Reflection page, and Navigation bar displays on it-->
-
 <!DOCTYPE html>
 <html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-               <meta name="viewport" content="width=device-width, initial-scale=1">
-               <title>About Me</title>
+               <meta name="viewport" content="width=device-width, initial-scale=1.0">
+               <title>Ashney Randle E-Portfolio</title>
                <link rel="stylesheet" href="style.css">
                <link rel="stylesheet" href="nav.css">
+               <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="header"><h1>About Me</h1></div>
-           <div class="main">
-            <img src="images/Profile image.png"
-                height="300" width="300">
+    <div class="header">
+        <h1>About Me</h1>
+    </div>
+        <div class="main">
+            <img src="images/Profile.png" alt="profile picture" height="200" width="200">
             <p> I am a committed, diligent, and reliable individual who strives to find ways to improve her workplace for the sake of staff 
                 and customers. Currently, I am working as an Archives Technician for the National Archives at St. Louis. 
                 In 2013, In 2013, I graduated from Missouri State University with a Bachelor of Arts in History with a minor in Library Science. 
@@ -27,45 +27,68 @@
             <br>
             <h3>Education:</h3> 
                 <ul>
-                    <li><center>Masters Library and Information Science (MLIS)<br>
-                        University of Missouri- Columbia<br>
-                        Intended graduation date: 5/2021</center></li>
-                    <br>
-                    <li><center>Bachelor of Arts in History<br>
-                        Missouri State University<br>
-                        Graduation Date: 5/2013</center></li>
-                </ul> 
-
-            <p><center>Check out my resume <a href="resume.pdf">here</a></center></p>
-        </div> 
-               <div class="footer">
-            <p>This website and all images are &copy;2021 of Ashney Randle, avr747@mail.missouri.edu.</p>
-        </div> 
-        
-        <div class="wrapper">
-        <div class="sidebar">
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
-                <ul class="nav">
-                   <li><a href="index.html">Home</a></li>
-                   <li><a href="about.html">About</a></li>
-                   <li><a href="project.html">Projects</a>
-                        <div class="sub-nav">
-                            <ul class="sub-menu">
-                                <li><a href="#">Link 1</a></li>
-                                <li><a href="#">Link 2</a></li>
-                                <li><a href="#">Link 3</a></li>
-                                <li><a href="#">Link 4</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                   <li><a href="reflection.html">Reflection</a></li>
-                   <li><a href="#contact.html">Contact Me</a></li> 
+                    <li>Masters Library and Information Science (MLIS)
+                        University of Missouri- Columbia
+                        Intended graduation date: 5/2021</li>
+                    <li>Bachelor of Arts in History
+                        Missouri State University
+                        Graduation Date: 5/2013</li>
                 </ul>
-        <label for="nav-toggle" class="nav-toggle-label">
-            <span>☰</span> </label>
+            <br>
+            <p>Check out my resume <a href="resume.pdf">here</a></p>
+        </div> 
+        <div class= "footer">
+            <p>Website and contents &copy; 2021 of Ashney Randle, avr747@mail.missouri.edu</p>
         </div>
-    
+<input type="checkbox" name="hamburger" id="chk">
+            <label for="chk" class="show-btn">
+                <i class="fa fa-bars"></i>
+            </label>
+            <label for="chk" class="hide-btn">
+                <i class="fa fa-times"></i>
+            </label>
+        <div class="sidebar">
+            <ul>                
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li id="toggle1"><a href="#">Projects<i class="fas fa-caret-down"></i></a></li>
+                            <li id="nested1"><a href="#">Link 1</a></li>
+                            <li id="nested2"><a href="#">Link 2</a></li>
+                            <li id="nested3"><a href="#">Link 3</a></li>
+                            <li id="nested4"><a href="#">Link 4</a></li>
+                <li><a href="reflection.html">Reflection</a></li>
+                <li><a href="#contact.html">Contact Me</a></li> 
+            </ul>
+        </div>
+        <script type="text/javascipt">
+        Let toggle 1 = document.querySelector("#toggle1");
+        Let nested 1 = document.querySelector("#nested1");
+        Let nested 2 = document.querySelector("#nested2");
+        Let nested 3 = document.querySelector("#nested3");
+        Let nested 4 = document.querySelector("#dested4");
+        Let arrow1 = document.querySelector("#arrow1");
 
-    </div>    
+        toggle1.addEventListener('click',()=>{
+            if(nested1.style.display == "block"|| nested2.style.display == "block" || nested3.style.display == "block" || nested4.style.display == "block"){
+                nested1.style.display = "none";
+                nested2.style.display = "none";
+                nested3.style.display = "none";
+                nested4.style.display = "none";
+                arrow1.style.transform = "rotate(0deg)";
+                arrow1.style.color = #fff;
+                arrow1.style.textShadow = "none";
+            }
+            else{
+                nested1.style.display = "block";
+                nested2.style.display = "block";
+                nested3.style.display = "block";
+                nested4.style.display = "block";
+                arrow1.style.transform = "rotate(180deg)";
+                arrow1.style.color = "#000000";
+                arrow1.stle.textShadow = "0 0 5px #000000"; 
+            }
+        });
+
+        </script>
 </body>
 </html>
