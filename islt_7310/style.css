@@ -1,5 +1,12 @@
 /*Validated with no errors returned 4/25/2021*/
 
+@font-face {
+    font-family: 'roboto_slabregular';
+    src: url('RobotoSlab-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .main{
     background-color:#00AACC;
     /*added height to try and cover white space at bottom of page, but lost entire sidebar nav as a result. removed it.*/
@@ -9,10 +16,12 @@ img{
     display:block;
     margin: auto;
 }
+
 h1 {color:#7e11d4;
     text-align: center;
     margin: auto;
-    width: 50%;}
+    width: 50%;
+}
 
 h2 {text-align: center;
     margin: auto;
@@ -27,7 +36,9 @@ blockquote{text-align: center;
     width: 50%;}
 
 p{  margin:auto;
-    width: 50%;}
+    width: 50%;
+    font-family:'roboto_slabregular',serif;
+}
 
 p:first-child{font-weight: bold;}
 
@@ -51,3 +62,32 @@ p:first-letter{font-size: 150%;}
     list-style-type: none;}
 
 
+/*Print Media Query, Works as of 4/26/2021!*/
+
+@media print{
+    *{
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    .sidebar, .sidebar ul{
+        display: none;
+    }
+    
+    .header{
+        margin-bottom: 0;
+        border: none;
+        text-align: center;
+    }
+
+    .a[href^="http:"] ::after {
+        content: " ["attr(href)"]";
+        color: blue;
+    }
+
+    @page{
+        margin: 1in;
+    }
+}
