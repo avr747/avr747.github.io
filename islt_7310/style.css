@@ -1,3 +1,5 @@
+/*Validated with no errors returned 4/25/2021*/
+
 .main{
     background-color:#00AACC;
     /*added height to try and cover white space at bottom of page, but lost entire sidebar nav as a result. removed it.*/
@@ -35,12 +37,15 @@ p:first-letter{font-size: 150%;}
     p + p {text-indent: 1.5em;
             margin-top: 0}
 
+
+/*Media Query successful!*/
 @media (max-width:768px) {
     p{
     width: 100%;
     text-align:center;
     }
 }
+
 .main ul{
     text-align: center;
     list-style-type: none;}
