@@ -22,7 +22,7 @@ padding:0; margin:0; box-sizing: border-box;}
 menu bar slides seamlessly underneath the hamburger menu. Need help fixing this* Code for sidebar starts below.*/
 
 .sidebar{                
-    width:20%;
+    width:10%;
     height:100%;
     position: fixed;
     top: 70px;
@@ -101,4 +101,3 @@ ul #nested1, ul #nested2, ul #nested3, ul #nested4{
         text-align:center;
     }
 }
-/*Icons for social media links to come*/

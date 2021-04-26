@@ -48,6 +48,15 @@ p:first-letter{font-size: 150%;}
     p + p {text-indent: 1.5em;
             margin-top: 0}
 
+.main ul{
+    text-align: center;
+    list-style-type: none;}
+
+
+    
+/*Icons for Email and Phone to go here on Week 6*/
+
+
 
 /*Media Query successful!*/
 @media (max-width:768px) {
@@ -56,11 +65,6 @@ p:first-letter{font-size: 150%;}
     text-align:center;
     }
 }
-
-.main ul{
-    text-align: center;
-    list-style-type: none;}
-
 
 /*Print Media Query, Works as of 4/26/2021!*/
 
@@ -91,3 +95,4 @@ p:first-letter{font-size: 150%;}
         margin: 1in;
     }
 }
+
