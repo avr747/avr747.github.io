@@ -1,3 +1,4 @@
+/*Validated with no errors found 4/25/2021, but issues with display on all pages due to white border at bottom.*/ 
 *{
 padding:0; margin:0; box-sizing: border-box;}
 
@@ -17,7 +18,10 @@ padding:0; margin:0; box-sizing: border-box;}
     transition: 0.7s;
 }
 
-.sidebar{
+/*Click on hamburger for navigation menu, screen jumps to bottom to show white space, and menu bar opens. Should be that
+menu bar slides seamlessly underneath the hamburger menu. Need help fixing this* Code for sidebar starts below.*/
+
+.sidebar{                
     width:15%;
     height:100%;
     position: fixed;
@@ -86,10 +90,11 @@ ul #nested1, ul #nested2, ul #nested3, ul #nested4{
     width:80%;    
 }
 
+/*Media Query works perfectly!*/
 @media (max-width:768px) {
     .sidebar{
         width: 100%;
         text-align:center;
     }
 }
-/*Icons for social links to come*/
+/*Icons for social media links to come*/

@@ -35,6 +35,12 @@ p:first-letter{font-size: 150%;}
     p + p {text-indent: 1.5em;
             margin-top: 0}
 
+@media (max-width:768px) {
+    p{
+    width: 100%;
+    text-align:center;
+    }
+}
 .main ul{
     text-align: center;
     list-style-type: none;}
