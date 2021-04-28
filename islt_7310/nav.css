@@ -1,7 +1,7 @@
 /*Validated 4/27/2021 and all checks out*/
 
 nav{
-    width: 150px;
+    width: 140px;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -30,12 +30,11 @@ nav ul li a:hover{
 
 nav ul ul{
   position: absolute;
-  left: 150px;
+  left: 130px;
   width: 130px;
   top: 0;
   display: none;
   background: #ff7c00;
-
 }
 
 nav ul .dropdown{
