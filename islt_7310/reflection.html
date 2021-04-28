@@ -1,20 +1,37 @@
-<!--Validated with no errors returned 4/25/2021-->
-
 <!DOCTYPE html>
-<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-               <meta name="viewport" content="width=device-width, initial-scale=1.0">
-               <title>Ashney Randle E-Portfolio</title>
-               <link rel="stylesheet" href="style.css">
-               <link rel="stylesheet" href="nav.css">
-               <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+<html>
+<head>
+    <title>Ashney Randle E-Portfolio</title>
+    <meta charset="uft-8">
+    <meta name = "viewport" content="width=device-width, initial-scale = 1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
 </head>
 <body>
+    <nav>
+    <label for="toggle">&#9776;</label>    <!--*Hamburger visible at 500px or less screen size. Appears but doesn't toggle*/-->
+    <input type="checkbox" id="toggle">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown"><a href="project.html">Projects</a>
+              <ul>
+                <li><a href="#">SLO 1</a></li>
+                <li><a href="#">SLO 2</a></li>
+                <li><a href="#">SLO 3</a></li>
+                <li><a href="#">SLO 4</a></li>
+              </ul>
+            </li>
+            <li><a href="reflection.html">Reflection</a></li>
+            <li><a href="#contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-    <div class="header">
-        <h1>Reflection</h1>
-    </div>
+    <header>
+    <h1>Reflection</h1>
+    </header>
 
-    <div class="main">
+    <main>
         <h3>My Journey in the MLIS Program</h3>
 
         <p>When I first entered the MLIS program, my focus was on learning everything I could about the profession and what it means to be an 
@@ -25,7 +42,7 @@
             Information Technology, Organization of Information, Reference Sources and Services, Collection and Access Management, and 
             Management of Information Agencies also helped to inform my understand of the tools we use and the policies we put in place to operate
             as information centers for the public.</p>
-
+        <br>
         <p>In my second year in the program, while in my Management of Information Agencies and American Library History courses is where I felt my
             interest in library and archives management started to form. In learning about the history of how libraries developed in the United 
             States, I was able to develop an appreciation and understanding of how far the field has come and the potential in where we could go. 
@@ -34,75 +51,25 @@
             supervisor and the work he does for us in my current position. My desire to learn more about management is why I took courses in project 
             management and information policy. Developing skills to help manage collaborative projects, and developing an awareness of the world and 
             the laws we operate in are important for an information agency to succeed today.</p>
-            
-            
+        <br>
         <p>In the later half of my second year and my third, I focused on taking archival science courses in order to understand archival theory. 
             After my internship with the Eisenhower Presidential Library, I found that I wanted to be an Archivist and knew I needed to study 
             archival theory in order to succeed in the field. The courses I took were relevant to my current work as an Archives Technician, but 
             I came to understand what the values and ethics are for archivists, where the field is and where it desires to go, and what my place 
             in it is. While I do not see myself becoming an Archivist now, having a full understanding of the responsibilities of archivists and 
             the tools they need to do their work, helps me in finding ways to help them get what they need to do their job.</p> 
-            
+        <br>    
         <p>As I reach the end of my time in the MLIS program, I have a strong appreciation for the work LIS professionals do. Advocacy and ensuring
             the public’s right to intellectual freedom is protected is important, but what I’m walking away with is an even stronger desire to help
             LIS professionals do the work they need live up to the mission of their institutions. I’ve met professors, co-workers, and even mentors 
             who have so much passion for their work. Their enthusiasm and love for the field continues to inspire me to do my best.    
             </p>
-        </div>
+        <br>
+    </main>
 
-        <div class= "footer">
+    <footer>
             <p>Website and contents &copy; 2021 of Ashney Randle, avr747@mail.missouri.edu</p>
-        </div>
+    </footer>
 
-    <input type="checkbox" name="hamburger" id="chk">
-        <label for="chk" class="show-btn">
-            <i class="fa fa-bars"></i>
-        </label>
-        <label for="chk" class="hide-btn">
-            <i class="fa fa-times"></i>
-        </label>
-    <div class="sidebar">
-        <ul>                
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li id="toggle1"><a href="project.html">Projects<span class="fas fa-caret-down" id="arrow1"></span></a></li> <!--make it dead link, and that helps see dropdown is there, but still not working right-->
-                        <li id="nested1"><a href="#">Link 1</a></li>
-                        <li id="nested2"><a href="#">Link 2</a></li>
-                        <li id="nested3"><a href="#">Link 3</a></li>
-                        <li id="nested4"><a href="#">Link 4</a></li>
-            <li><a href="reflection.html">Reflection</a></li>
-            <li><a href="#contact.html">Contact Me</a></li> 
-        </ul>
-    </div>
-    <script type="text/javascipt">
-    Let toggle 1 = document.querySelector("#toggle1");
-    Let nested 1 = document.querySelector("#nested1");
-    Let nested 2 = document.querySelector("#nested2");
-    Let nested 3 = document.querySelector("#nested3");
-    Let nested 4 = document.querySelector("#dested4");
-    Let arrow1 = document.querySelector("#arrow1");
-
-    toggle1.addEventListener('click',()=>{
-        if(nested1.style.display == "block"|| nested2.style.display == "block" || nested3.style.display == "block" || nested4.style.display == "block"){
-            nested1.style.display = "none";
-            nested2.style.display = "none";
-            nested3.style.display = "none";
-            nested4.style.display = "none";
-            arrow1.style.transform = "rotate(0deg)";
-            arrow1.style.color = #fff;
-            arrow1.style.textShadow = "none";
-        }
-        else{
-            nested1.style.display = "block";
-            nested2.style.display = "block";
-            nested3.style.display = "block";
-            nested4.style.display = "block";
-            arrow1.style.transform = "rotate(180deg)";
-            arrow1.style.color = "#000000";
-            arrow1.stle.textShadow = "0 0 5px #000000"; 
-        }
-    });
-
-    </script>
 </body>
 </html>
