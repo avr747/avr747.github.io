@@ -1,5 +1,10 @@
 /*Validated and no errors found 4/27/2021*/
 
+@font-face { 
+    font-family: 'robotoslab_regular';
+    src: url("RobotoSlab-Regular-webfont.woff");
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -10,6 +15,7 @@ html, body{
     width: 100%;
     height: 100%;
     margin: 0;
+    
 }
 
 body{
@@ -25,12 +31,21 @@ img{
     margin: auto;
 }
 
-h1 {color:#7e11d4;
+
+h1 {color:black;
+    font-family:'robotoslab_regular',sans-serif;
     text-align: center;
     margin: auto;
     width: 50%;
 }
+main h1{
+    color: black;
+}
 
+main{
+    font-family:'robotoslab_regular', sans-serif;
+    font-size: 11;
+}
 h2 {text-align: center;
     margin: auto;
     width: 50%;}
@@ -45,7 +60,6 @@ blockquote{text-align: center;
 
 p{  margin:auto;
     width: 50%;
-    font-family:'roboto_slabregular',serif;
 }
 
 p:first-child{font-weight: bold;}
@@ -56,10 +70,14 @@ p:first-letter{font-size: 150%;}
     p + p {text-indent: 1.5em;
             margin-top: 0}
 
+
 main ul{
     text-align: center;
     list-style-type: none;}
 
+footer p{
+    text-align: center;
+}
 
  
 /*Icons for Email and Phone to go here on Week 6*/
