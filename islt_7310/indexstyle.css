@@ -48,12 +48,14 @@ p{  margin:auto;
 }
 
 .footer p{
+    font-family: 'robotoslab_regular';
     text-align: center;
     position: fixed;
     left: 0;
+    font-size: 15pt;
     bottom: 0;
     color: white;
-    height: 25px;
+    height: 35px;
     width: 100%;
     background-image: url(images/footer.jpg);
 }
@@ -69,6 +71,11 @@ p{  margin:auto;
     p{
     width: 100%;
     text-align:center;
+    }
+
+    .footer{
+        width: 100%;
+        text-align:center;
     }
 }
 
@@ -90,6 +97,10 @@ p{  margin:auto;
         margin-bottom: 0;
         border: none;
         text-align: center;
+    }
+
+    .footer{
+        display: none;
     }
 
     @page{

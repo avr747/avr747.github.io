@@ -76,12 +76,18 @@ main ul{
     list-style-type: none;
     font-size: 11pt;}
     
-footer p{
+.footer p{
+    font-family: 'robotoslab_regular';
     text-align: center;
+    position: fixed;
+    left: 0;
+    font-size: 15pt;
+    bottom: 0;
+    color: white;
+    height: 35px;
+    width: 100%;
+    background-image: url(images/footer.jpg);
 }
-
- 
-/*Icons for Email and Phone to go here on Week 6*/
 
 
 
