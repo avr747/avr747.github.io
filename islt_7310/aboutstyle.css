@@ -100,6 +100,12 @@ main ul{
         width: 100%;
         text-align:center;
     }
+
+    img{
+        width: 50%;
+        height: auto;
+        float:right;
+    }
 }
 
 

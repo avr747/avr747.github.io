@@ -27,8 +27,9 @@ header{
 }
 
 img{
-    display:block;
-    margin: auto;
+    width: 20%;
+    height: auto;
+    float:right;
 }
 
 
