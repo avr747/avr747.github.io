@@ -15,12 +15,6 @@ html, body{
     margin: 0;
 }
 
-body{
-    background-image: url(images/indexBG.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 header{
     text-align: center;
 }
@@ -60,10 +54,7 @@ p{  margin:auto;
     background-image: url(images/footer.jpg);
 }
 
-.footer img{
-    height: 12px;
-    width:10px;
-}
+
  
 /*Icons for Email and Phone to go here on Week 6*/
 
