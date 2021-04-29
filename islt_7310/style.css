@@ -46,6 +46,7 @@ main{
     font-family:'robotoslab_regular', sans-serif;
     font-size: 11pt;
 }
+
 h2 {text-align: center;
     margin: auto;
     width: 50%;}
@@ -84,11 +85,10 @@ main ul{
     font-size: 15pt;
     bottom: 0;
     color: white;
-    height: 35px;
+    height: 30px;
     width: 100%;
     background-image: url(images/footer.jpg);
 }
-
 
 
 /*Media Query successful!*/
@@ -97,7 +97,13 @@ main ul{
     width: 100%;
     text-align:center;
     }
+
+    .footer{
+        width: 100%;
+        text-align:center;
+    }
 }
+
 
 /*Print Media Query, Works as of 4/26/2021!*/
 
@@ -122,6 +128,19 @@ main ul{
     .a[href^="http:"] ::after {
         content: " ["attr(href)"]";
         color: blue;
+    }
+
+    .footer p{
+        font-family:'robotoslab_regular';
+        text-align: center;
+        position: fixed;
+        left: 0;
+        font-size: 15pt;
+        bottom: 0;
+        color: white;
+        height: 30px;
+        width: 100%;
+        background-image: url(images/footer.jpg);
     }
 
     @page{
