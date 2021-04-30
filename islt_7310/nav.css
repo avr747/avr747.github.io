@@ -43,23 +43,16 @@ nav ul .dropdown:hover ul{
 display: initial;
 }
 
-label{
-  margin:0 40px 0 0;
-  font-size: 35px;
-  line-height: 70px;
-  display: none;
-}
-
-#toggle {
-  display:none;
-}
 
 @media only screen and (max-width: 500px) {
-label{
-  display:block;
-}
+  #hamburger {
+  display: inline-block;
+  }
+  
+  nav, nav ul, nav:active ul {
+    display: none;
+    position: absolute;
+    
+  } 
 
-#toggle:checked ~ nav{
-  display: block;
-}
 }
