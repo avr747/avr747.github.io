@@ -1,3 +1,4 @@
+  
 @font-face { 
     font-family: 'robotoslab_regular';
     src: url("RobotoSlab-Regular-webfont.woff");
@@ -34,7 +35,7 @@ main h1{
 }
 
 main{
-    font-family:'robotoslab_regular', sans-serif;
+    font-family:'robotoslab_regular';
     font-size: 11pt;
 }
 
@@ -47,6 +48,7 @@ p{  margin:auto;
     width: 50%;
 }
 
+/*Footer Stylings*/
 .footer p{
     font-family: 'robotoslab_regular';
     text-align: center;
@@ -69,11 +71,6 @@ p{  margin:auto;
     transform: scale(1.8); 
   }
 
- 
-/*Icons for Email and Phone to go here on Week 6*/
-
-
-
 /*Media Query successful!*/
 @media (max-width:500px) {
     p{
@@ -85,6 +82,7 @@ p{  margin:auto;
         width: 100%;
         text-align:center;
     }
+
 }
 
 /*Print Media Query, Works as of 4/26/2021!*/
@@ -115,4 +113,3 @@ p{  margin:auto;
         margin: 1in;
     }
 }
-

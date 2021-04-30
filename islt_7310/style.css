@@ -83,7 +83,7 @@ main ul{
     text-align: center;
     position: fixed;
     left: 0;
-    font-size: 15pt;
+    font-size: 13pt;
     bottom: 0;
     color: white;
     height: 30px;
@@ -91,6 +91,13 @@ main ul{
     background-image: url(images/footer.jpg);
 }
 
+.icon { 
+    transition: all .4s ease-in; 
+}
+       
+  .icon:hover { 
+    transform: scale(1.8); 
+}
 
 /*Media Query successful!*/
 @media (max-width:500px) {
