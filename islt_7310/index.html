@@ -1,39 +1,46 @@
+<!---Passed Validate Check on 4/30/21-->
+
 <!DOCTYPE html>
-<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-               <meta name="viewport" content="width=device-width, initial-scale=1.0">
-               <title>Ashney Randle E-Portfolio</title>
-               <link rel="stylesheet" href="indexstyle.css">
-               <link rel="stylesheet" href="nav.css">
-               <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
-               <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon.ico">         
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashney Randle E-Portfolio</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script> <!--Jquery for navigation animation-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> <!--icons-->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon.ico"> <!--favicon-->
 </head>
-<body>
-    <nav>
-    <label id="hamburger">&#9776;</label>    <!--*still doesn't work*/-->
+
+  <body>
+    <div class="header">
+        <h1>Ashney Randle E-Portfolio</h1></div>
+    <div class="btn">
+      <span class="fas fa-bars"></span>
+    </div>
+    <nav class="sidebar">
+      <div class="text">Menu</div>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li class="dropdown"><a href="project.html">Projects</a>
-              <ul>
-                <li><a href="#">SLO 1</a></li>
-                <li><a href="#">SLO 2</a></li>
-                <li><a href="#">SLO 3</a></li>
-                <li><a href="#">SLO 4</a></li>
-              </ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#" class="proj-btn">Projects<span class="fas fa-caret-down first"></span></a>
+                <ul class="proj-show">
+                    <li><a href="SLO1.html">SLO 1</a></li>
+                    <li><a href="SLO2.html">SLO 2</a></li>
+                    <li><a href="SLO3.html">SLO 3</a></li>
+                    <li><a href="SLO4.html">SLO 4</a></li>
+                </ul>
             </li>
-            <li><a href="reflection.html">Reflection</a></li>
-            <li><a href="#contact.html">Contact</a></li>
+            <li><a href="#">Reflection</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </nav>
-        
-    <header>
-    <h1>Ashney Randle E-Portfolio</h1>
-    </header>
     
-    <main> 
+    <div class="main">
         <br>
         <h3><em>Welcome! I am current Masters of Library and Information Science graduate student at the University of Missouri, and 
-            my goal is to one day obtain a position where I get to manage and improve internal processes of libraries and archives.</h3></em>
+            my goal is to one day obtain a position where I get to manage and improve internal processes of libraries and archives.</em></h3>
         <br>
         <br>
         <p>When I entered the MLIS program in 2018, my goal was to learn more about the LIS profession. I came into the program with a 
@@ -41,15 +48,32 @@
             LIS professional is hinders my growth. Upon graduation in May 2021, I will be leaving the MLIS profession with the 
             knowledge of what the core ethics of librarianship are, and the role I play as an LIS professional. With this portfolio, 
             it is my hope that I am able to demonstrate two things. The first, is that you can see my what my interests are and my growth
-             as a professional. Second, is to highlight the work I have done in the MLIS program. 
-             The work selected is what I feel demonstrates my mastery of the four student learning outcomes of the program.</p>
-    </main>
-    
-    <div class="footer">
-        <p><b>Ashney Randle|      <img class="icon" src="images/envelope-solid.svg" alt="email logo" width="15" height="15"/> avr747@missouri.edu |        
-            <img class="icon" src="images/phone-alt-solid.svg" alt="phone logo" width="15" height="15"/> 1+800-823-9111| &copy; 2021 All Rights 
-            Reserved. Icons secured from <a href="https://fontawesome.com/license">FontAwesome</a></b></p>
+            as a professional. Second, is to highlight the work I have done in the MLIS program. 
+            The work selected is what I feel demonstrates my mastery of the four student learning outcomes of the program.</p>
     </div>
 
-</body>
+
+    <div class="footer">
+      <p><b>Ashney Randle|      <img class="icon" src="images/envelope-solid.svg" alt="email logo" width="15" height="15"/> avr747@missouri.edu |        
+          <img class="icon" src="images/phone-alt-solid.svg" alt="phone logo" width="15" height="15"/> 1+800-823-9111| &copy; 2021 All Rights 
+          Reserved. Icons secured from <a href="https://fontawesome.com/license">FontAwesome</a></b></p>
+  </div>
+<!--Foooter goes here and will need styling to sit at bottom in CSS-->
+    
+    <script>
+    $('.btn').click(function(){
+      $(this).toggleClass("click");
+      $('.sidebar').toggleClass("show");
+    });
+      $('.proj-btn').click(function(){
+        $('nav ul .proj-show').toggleClass("show");
+        $('nav ul .first').toggleClass("rotate");
+      });
+
+      $('nav ul li').click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+      });
+    </script>
+    
+  </body>
 </html>
