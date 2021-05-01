@@ -140,11 +140,19 @@ video{
     margin: 0 auto;
 }
 
+/*Stylings for Project Pages*/
 .projects{
     display:block;
 }
 .projects div{
     padding-bottom: 50px;
+}
+
+
+.container{
+    width:100%;
+    margin-left: 325px;
+    margin-right: auto;
 }
 
 /*Styles for Footer*/
@@ -168,6 +176,7 @@ video{
 .icon:hover { 
     transform: scale(1.8); 
 }
+
 
 /*Media Queries Section for Tablet View*/
 
