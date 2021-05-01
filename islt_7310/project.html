@@ -1,46 +1,105 @@
-<!--Validated 4/27/2021-->
 <!DOCTYPE html>
-<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-               <meta name="viewport" content="width=device-width, initial-scale=1.0">
-               <title>Ashney Randle E-Portfolio</title>
-               <link rel="stylesheet" href="style.css">
-               <link rel="stylesheet" href="nav.css">
-               <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon.ico">
+<html lang="en" dir="ltr">
+<head>
+    <title>Projects</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script> <!--Jquery for navigation animation-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> <!--icons-->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon.ico"> <!--favicon-->
 </head>
-<body>
-    <nav>
-    <label for="toggle">&#9776;</label>    <!--*Hamburger visible at 500px or less screen size. Appears but doesn't toggle*/-->
-    <input type="checkbox" id="toggle">
+
+  <body>
+    <div class="header">
+        <img src="favicon_io/android-chrome-192x192.png" alt="logo">
+        <h1>SLO Projects</h1>
+    </div>
+    <div class="btn">
+      <span class="fas fa-bars"></span>
+    </div>
+      
+    <nav class="sidebar">
+      <div class="text">Menu</div>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li class="dropdown"><a href="project.html">Projects</a>
-              <ul>
-                <li><a href="#">SLO 1</a></li>
-                <li><a href="#">SLO 2</a></li>
-                <li><a href="#">SLO 3</a></li>
-                <li><a href="#">SLO 4</a></li>
-              </ul>
+            <li><a href="project.html" class="proj-btn">Projects<span class="fas fa-caret-down first"></span></a>
+                <ul class="proj-show">
+                    <li><a href="SLO1.html">SLO 1</a></li>
+                    <li><a href="SLO2.html">SLO 2</a></li>
+                    <li><a href="SLO3.html">SLO 3</a></li>
+                    <li><a href="SLO4.html">SLO 4</a></li>
+                </ul>
             </li>
             <li><a href="reflection.html">Reflection</a></li>
-            <li><a href="#contact.html">Contact</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </nav>
     
-    <header>
-    <h1>My Projects</h1>
-    </header>
-    
-    <main>
-           
-    
-            
-    
-    </main>
+    <div class="main">
+      <div class=projects>
+        <p>The MLIS program at the University of Missouri has 4 Student Learning Outcomes (SLO's) that graduate students need to meet in order
+          graduate. Below you will find four projects that I have completed during my time in the program that meet a specific SLO. More in depth
+          information on each project can be found in the dropdown menu under "Projects".</p>
+          <br>
+        <div>
+          <h2>SLO 1:Foundations of LIS</h2>
+          <a href="Projects/7305_FS2018_ RANDLE_ASHNEY_Letter.docx">Advocacy Letter to Congressman</a>
+          <p>For this SLO, the project I've chosen demonstrates mastery by applying the core principles, ethics, values, and body of knowledge 
+          to questions in library and information science according to their area of specialty.</p>
+        </div>
+        <br>
+        <div>
+          <h2>SLO2: Management</h2>
+          <a href="Projects/SP2020_Project Description_ARANDLE.docx">Digitization Project</a>
+          <p>This project demonstrates my ability to apply management principles and interdisciplinary best practices in 
+          a library and information agency.</p>
+        </div>
+        <br>
+        <div>
+          <h2>SLO3: Technology</h2>
+          <a href="Projects/RANDLE_ArchivesSpace Collection Access Report.rtf">ArchivesSpace Report</a>
+          <p>My project for SLO 3 demonstrates competentcy in information organization and lifecycle activities techniques of organization of 
+            information and with using and evaluating technologies of the information professions</p>
+        </div>
+        <br>
+        <div>
+          <h2>SLO 4: Access, Use, & Users</h2>
+          <a href="https://lis-missouri.libguides.com/c.php?g=949893">American Folklore LibGuide</a>
+          <p> The Project for SLO 4 demonstrates my ability to assess a community need, formulate a plan to respond to users of information 
+            agencies, and instruct users in using informational resources.</p>
+        </div>
 
-    <footer>
-        <p>Website and contents &copy; 2021 of Ashney Randle, avr747@mail.missouri.edu</p>
-    </footer>
+        <div>
+          <h2></h2>
+        </div>
+      </div>
 
-</body>
+    </div>
+
+    <div class="footer">
+      <p><b>Ashney Randle|<img class="icon" src="images/envelope-solid.svg" alt="email logo" width="15" height="15"/> avr747@missouri.edu |
+         <img class="icon" src="images/phone-alt-solid.svg" alt="phone logo" width="15" height="15"/> 1+800-823-9111| &copy; 2021. Icons from <a href="https://fontawesome.com/license">FontAwesome</a></b></p>
+  </div>
+    
+    <script>
+    $('.btn').click(function(){
+      $(this).toggleClass("click");
+      $('.sidebar').toggleClass("show");
+    });
+      $('.proj-btn').hover(function(){
+        $('nav ul .proj-show').toggleClass("show");
+        $('nav ul .first').toggleClass("rotate");
+      });
+//This line will be the start of a new function. Need the sub-menu (nav ul. proj-show) to stay open after hovering over Project link
+//so links inside sub-menu can be clicked. Ask for assitance here.
+      $('nav ul li').click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+      });
+    </script>
+    
+  </body>
 </html>

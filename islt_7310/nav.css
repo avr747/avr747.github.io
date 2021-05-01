@@ -91,9 +91,7 @@ nav ul ul{
 nav ul .proj-show.show{
   display: block;
 }
-nav ul .proj-show.show1{
-  display: block;
-}
+
 nav ul ul li{
   line-height: 42px;
   border-top: none;

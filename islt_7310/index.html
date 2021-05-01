@@ -28,7 +28,7 @@
         <ul>
             <li class="active"><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="#" class="proj-btn">Projects<span class="fas fa-caret-down first"></span></a>
+            <li><a href="project.html" class="proj-btn">Projects<span class="fas fa-caret-down first"></span></a>
                 <ul class="proj-show">
                     <li><a href="SLO1.html">SLO 1</a></li>
                     <li><a href="SLO2.html">SLO 2</a></li>
@@ -68,11 +68,12 @@
       $(this).toggleClass("click");
       $('.sidebar').toggleClass("show");
     });
-      $('.proj-btn').click(function(){
+      $('.proj-btn').hover(function(){
         $('nav ul .proj-show').toggleClass("show");
         $('nav ul .first').toggleClass("rotate");
       });
-
+//This line will be the start of a new function. Need the sub-menu (nav ul. proj-show) to stay open after hovering over Project link
+//so links inside sub-menu can be clicked. Ask for assitance here.
       $('nav ul li').click(function(){
         $(this).addClass("active").siblings().removeClass("active");
       });
