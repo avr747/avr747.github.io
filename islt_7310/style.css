@@ -220,6 +220,13 @@ video{
         text-align: center;
     }
 
+    .container{
+        display: block;
+        width: 100%;
+        margin-left: 200px;
+        margin-right: auto;
+    }
+
 }
 
 /*Media Query for Mobile View*/
@@ -268,6 +275,12 @@ video{
         display:block;        
     }
 
+    .container{
+        display: block;
+        width: 100%;
+        margin-left: 100px;
+        margin-right: auto;
+    }
 }
 
 /*Print Media Query*/
@@ -307,6 +320,8 @@ video{
     @page{
         margin: 1in;
     }
+
+    
 
 }
 
