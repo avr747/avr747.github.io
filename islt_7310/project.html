@@ -94,8 +94,11 @@
         $('nav ul .proj-show').toggleClass("show");
         $('nav ul .first').toggleClass("rotate");
       });
-//This line will be the start of a new function. Need the sub-menu (nav ul. proj-show) to stay open after hovering over Project link
-//so links inside sub-menu can be clicked. Ask for assitance here.
+
+      $('nav ul li ul').hover(function(){
+        $(this).stop(true,false,true).toggleClass("show");
+      });
+
       $('nav ul li').click(function(){
         $(this).addClass("active").siblings().removeClass("active");
       });

@@ -72,6 +72,10 @@
         $('nav ul .first').toggleClass("rotate");
       });
 
+      $('nav ul li ul').hover(function(){
+        $(this).stop(true,false,true).toggleClass("show");
+      });
+
       $('nav ul li').click(function(){
         $(this).addClass("active").siblings().removeClass("active");
       });
