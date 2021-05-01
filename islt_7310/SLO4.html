@@ -69,13 +69,9 @@
       $(this).toggleClass("click");
       $('.sidebar').toggleClass("show");
     });
-      $('.proj-btn').click(function(){
+      $('.proj-btn').hover(function(){
         $('nav ul .proj-show').toggleClass("show");
         $('nav ul .first').toggleClass("rotate");
-      });
-
-      $('nav ul li ul').hover(function(){
-        $(this).stop(true,false,true).toggleClass("show");
       });
 
       $('nav ul li ul').hover(function(){
