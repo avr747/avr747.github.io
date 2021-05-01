@@ -106,7 +106,7 @@ p{  margin:auto;
 .main ul{
     text-align: center;
     list-style-type: none;
-    font-size: 11pt;
+    font-size: 12pt;
 }
 
 video{
@@ -120,7 +120,7 @@ video{
     text-align: center;
     position: fixed;
     left: 0;
-    font-size: 13pt;
+    font-size: 11pt;
     bottom: 0;
     color: white;
     height: 25px;
@@ -136,18 +136,73 @@ video{
     transform: scale(1.8); 
 }
 
-/*Media Queries Section for Mobile View*/
+/*Media Queries Section for Tablet View*/
 
-@media (max-width:600px) {
+@media (max-width:768px) {
         
     p{
     width: 100%;
     text-align:center;
     }
 
+    .header{
+        text-align: center;
+        width: 100%;
+        height:50px;
+    }
+
     .footer{
         width: 100%;
         text-align:center;
+    }
+
+
+    .main img{
+        width: 50%;
+        height: auto;
+        float:left;
+    }
+
+    video{
+        width:50%
+    }
+
+    .sidebar{
+        width: 100%;
+        left:-100%;
+    }
+
+    .sidebar .text, nav ul a{
+        display:block;
+        border-bottom: 1px solid #fff;  
+    }
+
+}
+
+/*Media Query for Mobile View*/
+@media (max-width:425px) {
+        
+    p{
+    width: 100%;
+    text-align:center;
+    }
+
+    .header{
+        text-align: center;
+        width: 100%;
+        height:60px;
+    }
+
+    .footer{
+        width: 100%;
+        text-align:center;
+    }
+
+    h3{
+        width:100%;
+        text-align: center;
+        margin-top: 20px;
+
     }
 
     .main img{
@@ -158,6 +213,17 @@ video{
 
     video{
         width:50%
+    }
+
+    .sidebar{
+        width: 100%;
+        left:-100%;
+    }
+
+    .sidebar .text, nav ul a{
+        display:block;
+        border-bottom: 1px solid #fff;
+        
     }
 
 }
@@ -172,7 +238,10 @@ video{
         text-shadow: none !important;
     }
 
-    nav, nav ul, nav ul ul{
+    .btn{
+        display: none;
+    }
+    .sidebar, .sidebar .text, nav ul, nav ul ul{
         display: none;
     }
     
@@ -181,6 +250,7 @@ video{
         border: none;
         text-align: center;
     }
+
 
     @page{
         margin: 1in;
