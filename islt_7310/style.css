@@ -150,9 +150,23 @@ video{
 
 
 .container{
-    width:100%;
-    margin-left: 325px;
+    display: block;
+    margin-top: 300px;
+    margin-left: 450px;
     margin-right: auto;
+}
+
+.box{
+    display: block;
+    margin-left: 450px;
+    margin-right: auto;
+}
+
+.bottom img{
+    display:block;
+    height: 450px;
+    margin: auto;
+    margin-top: 300px;
 }
 
 /*Styles for Footer*/
@@ -205,6 +219,14 @@ video{
         float:left;
     }
 
+    .bottom img{
+        display: block;
+        margin: auto;
+        margin-top: 300px;
+        width: 70%;
+        
+    }
+
     video{
         width:50%
     }
@@ -217,8 +239,13 @@ video{
 
     .container{
         display: block;
-        width: 100%;
-        margin-left: 200px;
+        margin-left: 150px;
+        margin-right: auto;
+    }
+
+    .box{
+        display: block;
+        margin-left: 150px;
         margin-right: auto;
     }
 
@@ -257,6 +284,14 @@ video{
         float:left;
     }
 
+    .bottom img{
+        display: block;
+        width:70%;
+        margin: auto;
+        margin-top: 450px;
+        height: 200px;
+    }
+
     video{
         width:50%
     }
@@ -268,8 +303,16 @@ video{
 
     .container{
         display: block;
-        width: 100%;
-        margin-left: 100px;
+        width: 70%;
+        margin-left: 25px;
+        margin-right: auto;
+
+    }
+
+    .box{
+        display:block;
+        width: 70%;
+        margin-left: 25px;
         margin-right: auto;
     }
 }
