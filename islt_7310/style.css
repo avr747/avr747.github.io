@@ -215,11 +215,6 @@ video{
         
     }
 
-    .sidebar .text, nav ul a{
-        display:block;
-        text-align: center;
-    }
-
     .container{
         display: block;
         width: 100%;
@@ -271,10 +266,6 @@ video{
         left:-100%;
     }
 
-    .sidebar .text, nav ul a{
-        display:block;        
-    }
-
     .container{
         display: block;
         width: 100%;
@@ -296,7 +287,7 @@ video{
     .btn{
         display: none;
     }
-    .sidebar, .sidebar .text, nav ul, nav ul ul{
+    .sidebar{
         display: none;
     }
     

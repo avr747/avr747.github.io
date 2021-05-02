@@ -1,0 +1,142 @@
+/*Passed Validation on 4/30/2021*/
+
+
+/*Hamburger Menu Styling*/
+#checked{
+    display:none;
+}
+
+label #btn, label #cancel{
+  position: fixed;
+  top: 5px;
+  left: 35px;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  background: #ff7c00;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: left 0.4s ease;
+}
+
+label #btn{
+    left: 35px;
+    top: 5px;
+    font-size:35px;
+    color: #fff;
+    padding: 6px 12px;
+    transition: left 0.4s ease;
+}
+
+label #cancel{
+    z-index: 1111;
+    left: -250px;
+    top: 5px;
+    font-size: 35px;
+    color:#fff;
+    padding: 6px 12px;
+    transition: right 0.4s ease;
+}
+
+#check:checked ~ .sidebar{
+    left: 0;
+}
+
+#check:checked ~ label #btn{
+    left:250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel{
+    left: 195px
+}
+
+/*Navigation Menu Styling*/
+.sidebar{
+  position:auto;
+  width: 250px;
+  height: 100%;
+  left: -250px;
+  background: #ff7c00;
+  transition: left 0.4s ease;
+
+}
+
+.sidebar .text{
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 25px;
+  text-align: center;
+  background: #ff7c00;
+  letter-spacing: 1px;
+  font-family: 'robotoslab_regular';
+}
+nav ul{
+  background: #ff7c00;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  font-family: 'robotoslab_regular';
+}
+
+nav ul li:first-child{
+  border-top: 1px solid #000;
+
+}
+
+nav ul li{
+  line-height: 65px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+nav ul li:last-child{
+  border-bottom: 1px solid rgba(0, 0, 0,0.01);
+}
+nav ul li a{
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding-left: 40px;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  border-left: 3px solid transparent;
+}
+
+nav ul li a:hover{
+  background: #fdd0a6;
+}
+
+nav ul li a:hover > nav ul .proj{
+  display:none;
+}
+/*Sub-Menu Styling*/
+
+nav ul ul{
+  position: static;
+  display: none;
+}
+
+nav ul .proj-show{
+    display: block;
+}
+
+nav ul ul li{
+  line-height: 42px;
+  border-top: none;
+}
+nav ul ul li a{
+  font-size: 17px;
+  color: #e6e6e6;
+  padding-left: 80px;
+}
+
+nav ul ul li a:hover{
+  color: cyan!important;
+  background: #1e1e1e!important;
+}
+
+

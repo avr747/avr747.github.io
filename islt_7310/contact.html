@@ -1,42 +1,43 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <title>Reflection</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="nav.css">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://code.jquery.com/jquery-3.4.1.js"></script> <!--Jquery for navigation animation-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> <!--icons-->
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon.ico"> <!--favicon-->
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> <!--icons-->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon.ico"> <!--favicon-->
 </head>
 
-  <body>
-    <div class="header">
-      <img src="favicon_io/android-chrome-192x192.png" alt="logo">
-      <h1>Reflection</h1>
-    </div>
-    <div class="btn">
-      <span class="fas fa-bars"></span>
-    </div>
-    <nav class="sidebar">
-      <div class="text">Menu</div>
-        <ul>
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="project.html" class="proj-btn">Projects<span class="fas fa-caret-down first"></span></a>
-                <ul class="proj-show">
-                    <li><a href="SLO1.html">SLO 1</a></li>
-                    <li><a href="SLO2.html">SLO 2</a></li>
-                    <li><a href="SLO3.html">SLO 3</a></li>
-                    <li><a href="SLO4.html">SLO 4</a></li>
-                </ul>
-            </li>
-            <li><a href="reflection.html">Reflection</a></li>
-            <li><a href="contact.html">Contact</a></li>
+<body>
+  <div class="header">
+    <img src="favicon_io/android-chrome-192x192.png" alt="logo">
+    <h1>Welcome!</h1>
+  </div>
+  <input type="checkbox" name="" id="chk">
+  <label for="chk" class="show-btn">
+      <i class="fa fa-bars"></i>
+  </label>
+  <label for="chk" class="hide-btn">
+    <i class="fa fa-times"></i>
+  </label>  
+  <div class="sidebar">
+    <ul class="mainmenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="project.html">Projects</a>
+        <ul class="submenu">
+          <li><a href="SLO1.html">SLO 1</a></li>
+          <li><a href="SLO2.html">SLO 2</a></li>
+          <li><a href="SLO3.html">SLO 3</a></li>
+          <li><a href="SLO4.html">SLO 4</a></li>
         </ul>
-    </nav>
+      </li>
+      <li><a href="reflection.html">Reflection</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
     
     <div class="main">
 
@@ -48,22 +49,6 @@
         <img class="icon" src="images/phone-alt-solid.svg" alt="phone logo" width="15" height="15"/> 1+800-823-9111| &copy; 2021. 
         Icons from <a href="https://fontawesome.com/license">FontAwesome</a></b></p>
     </div>
-<!--Foooter goes here and will need styling to sit at bottom in CSS-->
-    
-    <script>
-    $('.btn').click(function(){
-      $(this).toggleClass("click");
-      $('.sidebar').toggleClass("show");
-    });
-      $('.proj-btn').click(function(){
-        $('nav ul .proj-show').toggleClass("show");
-        $('nav ul .first').toggleClass("rotate");
-      });
-
-      $('nav ul li').click(function(){
-        $(this).addClass("active").siblings().removeClass("active");
-      });
-    </script>
     
   </body>
 </html>
