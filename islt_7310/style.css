@@ -170,17 +170,20 @@ video{
 }
 
 /*Styles for Footer*/
-.footer p{
-    font-family: 'robotoslab_regular';
-    text-align: center;
+.footer{
     position: fixed;
-    left: 0;
-    font-size: 11pt;
     bottom: 0;
-    color: white;
-    height: 25px;
+    height: 30px;
     width: 100%;
     background-image: url(images/footer.jpg);
+}
+
+.footer p{
+    font-family:'robotoslab_regular';
+    text-align:center;
+    font-size: 14pt;
+    margin-top: 5px;
+    color: #7e11d4;
 }
 
 .icon { 
