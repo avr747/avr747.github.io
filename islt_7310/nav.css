@@ -2,8 +2,6 @@
 /*Passed Validation 5/2/2021*/
 
 
-
-
 /*Hamburger Menu*/
 .show-btn, .hide-btn{
   font-size: 35px;
@@ -77,8 +75,8 @@
 }
 
 .sunmenu a:hover {
-  color: cyan!important;
-  background: #1e1e1e!important;
+  color: cyan;
+  background: #1e1e1e;
 }
 
 .submenu {

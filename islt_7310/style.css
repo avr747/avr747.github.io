@@ -1,4 +1,4 @@
-/*Passed Validation Check on 5/2/2021*/
+/*Passed Validation Check on 5/5/2021*/
 
 *{
     margin-left: 0;
@@ -47,11 +47,11 @@ body{
 /*End Grid Layout*/
 
 body{
-    background-color: #00AACC;
+    background-color:aliceblue;
 }
 
 .header{
-    background-color: #ff7c00;
+    background-color: #f5a050;
     border-bottom: 1px solid black;
     width: 100%;
     position: fixed;
@@ -249,6 +249,62 @@ video{
         margin-right: auto;
     }
 
+}
+
+/*Contact Form Styling*/
+section{
+    height: 90vh;
+    width: 60%;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.container2{
+    height: 90vh;
+    width: 60%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px #000000;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.form-group{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.form-group input,.form-group textarea{
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid rgba(128,128,128,0.199);
+    margin-top: 5px;
+}
+
+textarea{
+    resize: vertical;
+}
+
+button[type="submit"]{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 8px;
+    color:#7e11d4;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px; 
+}
+
+button[type="submit"]:hover{
+    background-color: rgb(152, 240, 240);
+    transition: .3s ease background-color;
 }
 
 /*Media Query for Mobile View*/
