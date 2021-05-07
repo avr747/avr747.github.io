@@ -160,6 +160,7 @@ video{
     display: block;
     margin-left: 450px;
     margin-right: auto;
+
 }
 
 .bottom img{
@@ -167,6 +168,51 @@ video{
     height: 450px;
     margin: auto;
     margin-top: 300px;
+}
+
+/*Table Styling*/
+
+table{
+    width: 900px;
+    margin: 0, auto;
+    background-color: white;
+    margin-left: 250px;
+}
+
+caption{
+    text-align: left;
+}
+
+caption{
+    background-color:aliceblue;
+    border-top: none;
+    font-size: 16pt;
+}
+
+table, th, td{
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 10px;
+}
+
+th{
+    background-color:#e7bff3;
+    text-align: center;
+}
+
+td{
+    text-align: center;
+}
+
+tr:nth-last-child(3){
+    background-color:#e7bff3;
+}
+
+tr:nth-last-child(1){
+    background-color: #e7bff3;
 }
 
 /*Contact Form Styling*/
@@ -303,6 +349,10 @@ button[type="submit"]:hover{
         margin-right: auto;
     }
 
+    table{
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 
 /*Media Query for Mobile View*/
@@ -380,6 +430,11 @@ button[type="submit"]:hover{
         width: 70%;
         margin-left: 25px;
         margin-right: auto;
+    }
+
+    table{
+        width: 60%;
+        margin: 0 auto;
     }
 }
 
