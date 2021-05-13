@@ -421,6 +421,11 @@ button[type="submit"]:hover{
         text-align:center;
     }
 
+    .footer p{
+        width: 100%;
+        text-align:center;
+    }
+
     h3{
         width:100%;
         text-align: center;
