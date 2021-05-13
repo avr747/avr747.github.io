@@ -401,10 +401,10 @@ button[type="submit"]:hover{
     }
 }
 
+
 /*Media Query for Mobile View*/
 @media (max-width:425px) {
     
-
     p{
     width: 70%;
     text-align:center;
@@ -487,6 +487,12 @@ button[type="submit"]:hover{
         width: 60%;
         margin: 0 auto;
     }
+
+    .submenu, .submenu a, .submenu a:hover{
+        display: block;
+    }
+
+
 }
 
 /*Print Media Query*/
