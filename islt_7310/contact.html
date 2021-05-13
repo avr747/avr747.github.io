@@ -1,9 +1,9 @@
-<!--Passed Validation 5/7/2021-->
+<!--Passed Validation 5/12/21-->
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-    <title>Home</title>
+    <title>Contact</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="nav.css">
@@ -63,6 +63,20 @@
           <div class="form-group">
           <label for="message">Message</label>
           <textarea id="message" name="message" placeholder="Type text here..." cols="30" rows="5" required></textarea>
+          <div id="remaining-chars">250 characters remaining</div>
+          <script>
+            const myTextArea = document.getElementById('message');
+            const remainingCharsText = document. getElementById('remaining-chars');
+            const MAX_CHARS = 250;
+
+            message.addEventListener('input',() => {
+              const remaining = MAX_CHARS - myTextArea.value.length;
+              const color = remaining < MAX_CHARS * 0.1 ? 'red' : null;
+              
+              remainingCharsText.textContent = `${remaining} characters remaining`;
+              remainingCharsText.style.color = color;
+            });
+          </script>
           </div>
           <button type="submit">Submit</button>
           </form>
