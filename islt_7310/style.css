@@ -509,7 +509,7 @@ button[type="submit"]:hover{
     }
 
     .submenu, .submenu a, .submenu a:hover{
-        display: block;
+        display: none;
     }
 }
 
