@@ -415,6 +415,10 @@ button[type="submit"]:hover{
         width: 60%;
         margin: 0 auto;
     }
+
+    .submenu, .submenu a, .submenu a:hover{
+        display: none;
+    }
 }
 
 
