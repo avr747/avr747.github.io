@@ -184,6 +184,13 @@ video{
     margin-top: 300px;
 }
 
+.linkset{
+    display: flex;
+    justify-content: center;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
 /*Table Styling*/
 
 table{
