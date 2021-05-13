@@ -154,6 +154,11 @@ video{
     margin: 0 auto;
 }
 
+.slo3 video{
+    display:block;
+    margin: 0 auto;
+}
+
 /*Stylings for Project Pages*/
 .projects{
     display:block;
@@ -350,7 +355,7 @@ button[type="submit"]:hover{
 @media (max-width:768px) {
     
     p{
-    width: 100%;
+    width: 40%;
     text-align:center;
     }
 
@@ -384,6 +389,10 @@ button[type="submit"]:hover{
         width:80%
     }
 
+    .slo3 video{
+        width: 500px;
+    }
+
     .sidebar{
         width: 100%;
         left:-100%;
@@ -403,7 +412,7 @@ button[type="submit"]:hover{
     }
 
     table{
-        width: 80%;
+        width: 60%;
         margin: 0 auto;
     }
 }
@@ -458,6 +467,10 @@ button[type="submit"]:hover{
         width:90%;
     }
 
+    .slo3 video{
+        width: 700px;
+    }
+
     .sidebar{
         width: 100%;
         left:-100%;
@@ -498,8 +511,6 @@ button[type="submit"]:hover{
     .submenu, .submenu a, .submenu a:hover{
         display: block;
     }
-
-
 }
 
 /*Print Media Query*/
